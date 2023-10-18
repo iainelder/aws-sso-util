@@ -2,5 +2,9 @@ jsonschema
 pyyaml
 boto3
 aws_error_utils
-# Use the local version of aws_sso_lib until PyPI hosts the fix.
--e ../../lib
+
+# Use the "local" version until PyPI hosts the fix.
+# I can't refer to the local version using `-e` syntax because `sam build`
+# doesn't mount the lib directory.
+# https://github.com/aws/aws-sam-cli/issues/5546
+aws_sso_lib @ git+https://github.com/iainelder/aws-sso-util.git@skip-suspended#subdirectory=lib
