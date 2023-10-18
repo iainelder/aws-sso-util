@@ -24,7 +24,7 @@ if os.path.exists(readme_path):
 setup(
     long_description=readme,
     name='aws-sso-lib',
-    version='1.14.0',
+    version='1.15.0-dev',
     description='Library to make AWS SSO easier',
     python_requires='==3.*,>=3.7.0',
     project_urls={"homepage": "https://github.com/benkehoe/aws-sso-util/blob/master/lib/README.md", "repository": "https://github.com/benkehoe/aws-sso-util"},
