@@ -2,3 +2,5 @@ jsonschema
 pyyaml
 boto3
 aws_error_utils
+# Use the local version of aws_sso_lib until PyPI hosts the fix.
+-e ../../lib
