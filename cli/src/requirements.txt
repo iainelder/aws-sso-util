@@ -8,6 +8,6 @@ aws_error_utils
 # I can't use a relative path because `sam build` doesn't mount the lib
 # directory. See https://github.com/aws/aws-sam-cli/issues/5546
 #
-# I can't use the normal VCS install syntax because `sam build` doesn't support
-# that syntax. See https://github.com/aws/aws-lambda-builders/issues/253
--e git+https://github.com/iainelder/aws-sso-util.git@skip-suspended#egg=aws_sso_lib&subdirectory=lib
+# `sam build` needs a `setup.py` to install from VCS.
+# See https://github.com/aws/aws-lambda-builders/issues/253
+aws_sso_lib @ git+https://github.com/iainelder/aws-sso-util.git@skip-suspended#subdirectory=lib
